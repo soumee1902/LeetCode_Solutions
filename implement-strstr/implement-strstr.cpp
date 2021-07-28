@@ -6,7 +6,7 @@ public:
            {
                return 0;
            }
-        
+            
             for(int i=0; i<haystack.size(); i++)
             {
                
@@ -33,6 +33,7 @@ public:
                         k++;
                     }
                 }
+                
             }
         return -1;
     }
