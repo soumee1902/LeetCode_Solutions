@@ -8,23 +8,25 @@ public:
             return 0;
         }
         else{
-        for(int i=0; i<s.length(); i++)
-        {
             
-            if(s[i] == ' ')
+            for(int i=0; i<s.length(); i++)
             {
-                flag = 0;
-            }
-            else{
-                if (flag == 0)
+            
+                if(s[i] == ' ')
                 {
-                     count =0;
+                    flag = 0;
                 }
-                count++;
-                flag = 1;
+            
+                else{
+                    if (flag == 0)
+                    {
+                        count =0;
+                    }
+                    count++;
+                    flag = 1;
+                    }
             }
-        }
-        }
+            }
             
             
                 
