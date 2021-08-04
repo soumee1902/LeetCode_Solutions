@@ -18,10 +18,7 @@ class Solution {
             sol(root->left, node);
             node.push_back(root->val);
             sol(root->right, node);
-            
         }
-        
-        
     }
 public:
     vector<int> inorderTraversal(TreeNode* root) {
