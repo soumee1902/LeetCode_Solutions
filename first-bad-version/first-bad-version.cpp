@@ -5,7 +5,6 @@ class Solution {
 public:
     int firstBadVersion(int n) {
         
-        //int bad = n-1;
         int high = n;
         int low = 1;
         int mid = low+(high-low)/2;
@@ -26,6 +25,6 @@ public:
         }
         
         return low;
-        
+    
     }
 };
