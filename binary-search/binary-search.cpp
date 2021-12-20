@@ -5,7 +5,7 @@ public:
         int high = nums.size()-1;
         int low = 0;
         int mid = high+low/2;
-        ///bool flag = true;
+        
         
         while(low<=high)
         {
