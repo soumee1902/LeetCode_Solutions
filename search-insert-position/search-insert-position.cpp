@@ -4,35 +4,35 @@ public:
         
         int high = nums.size()-1;
         int low = 0;
-        int mid = high + low/2;
+        int mid = low+(high-low)/2;
+        //bool  flag = false;
         
-        
-        while(low <= high){
+        while(low <= high)
+        {
+            mid = low + (high - low)/2;
             
-            mid = high + low/2;
-            if( target > nums[mid])
+            if(nums[mid] < target)
             {
-               
-                low = mid + 1;
+                low = mid+1;
             }
             
-            else if(target < nums[mid])
+            if(nums[mid] > target)
             {
-                high = mid - 1;
+                high = mid-1;
             }
             
-            else
+            if(nums[mid] == target)
             {
-               if(nums[mid] ==  target)
-            {
-               
+               /// flag = true;
                 return mid;
             }
-            }
+            
         }
-            
-            
-                
+        
+       
+        
         return high+1;
+        
+        
     }
 };
